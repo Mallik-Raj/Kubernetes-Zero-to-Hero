@@ -139,13 +139,13 @@ A deployment is an object in Kubernetes that lets you manage a set of identical 
 
 ![image](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/83011d7a-e3c4-4ec9-92cc-3e4b9f06d434)
 
-First, the <strong> replicas </strong> key sets the number of instances of the pod that the deployment should keep alive.
+First, the `replicas` key sets the number of instances of the pod that the deployment should keep alive.
 Next, we use a label selector to tell the deployment which pods are part of the deployment. This essentially says "all the pods matching these labels are grouped in our deployment."
-After that, we have the <strong> template </strong> object.
+After that, we have the `template` object.
 This is interesting. It’s essentially a pod template jammed inside our deployment spec. When the deployment creates pods, it will create them using this template!
 
 So everything under the template key is a regular pod specification.
-In this case, the deployment will create pods that run <strong> nginx-hostname </strong> and with the configured labels.
+In this case, the deployment will create pods that run  `nginx-hostname` and with the configured labels.
 
 
 
