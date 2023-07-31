@@ -98,13 +98,13 @@ After a few mins, run the below command to verify the cluster installation.
 kops validate cluster demok8scluster.k8s.local
 ```
 
-### Difference between Container and POD
+## Difference between Container and POD
 
 Container is a lightweight, standalone executable package that contains everything needed to run an application, including code, libraries, and dependencies. Containers provide a consistent, isolated environment for your applications, making it easier to move them between different environments without worrying about compatibility issues.
 
 A pod is the smallest deployable unit in Kubernetes, which is a popular container orchestration platform. A pod is a logical host for one or more containers and provides a shared network namespace and storage volumes for those containers. In other words, a pod is a way to group together one or more containers that need to work together as a single unit. Each pod has a unique IP address and can communicate with other pods and services in the Kubernetes cluster.
 
-## Commands for POD
+### Commands for POD
 
 ```
 kubectl apply -f simple-pod.yaml              # create a pod
@@ -114,7 +114,7 @@ kubectl get pods                              # List all pods in the namespace
 kubectl get pod my-pod -o yaml                # Get a pod's YAML
 ```
 
-## Example of a Pod which consists of a container running the image
+#### Example of a Pod which consists of a container running the image
 ```
 apiVersion: v1
 kind: Pod
