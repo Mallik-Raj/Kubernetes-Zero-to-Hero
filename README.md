@@ -1,7 +1,7 @@
 # Kubernetes-Zero-to-Hero
 Creating this repo with an intent to make Kubernetes easy for begineers. This is a work-in-progress repo.
 
-# K8s-Arch
+### K8s-Arch
 
 ![image](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/b0f6f558-76ee-474f-b71c-33e9c7ff834d)
 
@@ -97,6 +97,12 @@ After a few mins, run the below command to verify the cluster installation.
 ```
 kops validate cluster demok8scluster.k8s.local
 ```
+
+### Difference between Container and POD
+
+Container is a lightweight, standalone executable package that contains everything needed to run an application, including code, libraries, and dependencies. Containers provide a consistent, isolated environment for your applications, making it easier to move them between different environments without worrying about compatibility issues.
+
+A pod is the smallest deployable unit in Kubernetes, which is a popular container orchestration platform. A pod is a logical host for one or more containers and provides a shared network namespace and storage volumes for those containers. In other words, a pod is a way to group together one or more containers that need to work together as a single unit. Each pod has a unique IP address and can communicate with other pods and services in the Kubernetes cluster.
 
 ## Commands for POD
 
