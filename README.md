@@ -132,12 +132,13 @@ spec:
 A deployment is an object in Kubernetes that lets you manage a set of identical pods.Without a deployment, you’d need to create, update, and delete a bunch of pods manually.With a deployment, you declare a single object in a YAML file. This object is responsible for creating the pods, making sure they stay up to date, and ensuring there are enough of them running ,You can also easily autoscale your applications using a Kubernetes deployment.Using this we will be able to achivce autohealing.
 
 
-![image](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/a87da25c-9d9b-48ee-b582-719edb1026e3)
+![deployment-diagram-kubernetes](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/caa8abe8-e263-4c44-8b04-772c541e38ca)
 
 
 ### YAML reference example
 
-![image](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/83011d7a-e3c4-4ec9-92cc-3e4b9f06d434)
+![deployment-yaml-diagram](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/9c9bed37-0df4-4085-a4c9-e98bf460335c)
+
 
 First, the `replicas` key sets the number of instances of the pod that the deployment should keep alive.
 Next, we use a label selector to tell the deployment which pods are part of the deployment. This essentially says "all the pods matching these labels are grouped in our deployment."
