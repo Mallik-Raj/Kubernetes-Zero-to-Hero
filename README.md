@@ -104,7 +104,8 @@ Container is a lightweight, standalone executable package that contains everythi
 
 A pod is the smallest deployable unit in Kubernetes, which is a popular container orchestration platform. A pod is a logical host for one or more containers and provides a shared network namespace and storage volumes for those containers. In other words, a pod is a way to group together one or more containers that need to work together as a single unit. Each pod has a unique IP address and can communicate with other pods and services in the Kubernetes cluster.
 
-           ![pod-animation-kubernetes](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/5fad6242-3aa3-486f-bb87-1354a4b0cde8)
+![pod-animation-kubernetes](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/30d4f299-69c8-4d5b-8361-0e9dd4d39624)
+
 
 
 ### Commands for POD
