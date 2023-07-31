@@ -104,6 +104,9 @@ Container is a lightweight, standalone executable package that contains everythi
 
 A pod is the smallest deployable unit in Kubernetes, which is a popular container orchestration platform. A pod is a logical host for one or more containers and provides a shared network namespace and storage volumes for those containers. In other words, a pod is a way to group together one or more containers that need to work together as a single unit. Each pod has a unique IP address and can communicate with other pods and services in the Kubernetes cluster.
 
+           ![pod-animation-kubernetes](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/5fad6242-3aa3-486f-bb87-1354a4b0cde8)
+
+
 ### Commands for POD
 
 ```
@@ -147,6 +150,17 @@ This is interesting. It’s essentially a pod template jammed inside our deploym
 
 So everything under the template key is a regular pod specification.
 In this case, the deployment will create pods that run  `nginx-hostname` and with the configured labels.
+
+##### How to create a deployment in Kubernetes
+If you want create your deployment from a file, you can use `kubectl apply -f deployment.yaml` to create your deployment.
+
+If want create your deployment from the command line, you can use `kubectl apply deployment my-deployment` to create your deployment
+##### How to delete a deployment in Kubernetes
+If you’ve created your deployment from a file, you can use `kubectl delete -f deployment.yaml` to delete your deployment.
+
+If you’ve created your deployment from the command line, you can use `kubectl delete deployment my-deployment` to delete your deployment.
+
+
 
 
 
