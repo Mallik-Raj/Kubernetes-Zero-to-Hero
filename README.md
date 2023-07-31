@@ -91,3 +91,15 @@ After a few mins, run the below command to verify the cluster installation.
 kops validate cluster demok8scluster.k8s.local
 ```
 
+## Commands for POD
+
+```
+kubectl apply -f simple-pod.yaml              # create a pod
+kubectl get pods --all-namespaces             # List all pods in all namespaces
+kubectl get pods -o wide                      # List all pods in the current namespace, with more details
+kubectl get pods                              # List all pods in the namespace
+kubectl get pod my-pod -o yaml                # Get a pod's YAML
+```
+
+
+
