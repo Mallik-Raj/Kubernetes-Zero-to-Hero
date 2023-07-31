@@ -1,6 +1,13 @@
 # Kubernetes-Zero-to-Hero
 Creating this repo with an intent to make Kubernetes easy for begineers. This is a work-in-progress repo.
 
+# K8s-Arch
+
+![image](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/b0f6f558-76ee-474f-b71c-33e9c7ff834d)
+
+
+
+
 ## Kubernetes Installation Using KOPS on EC2
 
 ### Create an EC2 instance or use your personal laptop.
