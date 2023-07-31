@@ -155,7 +155,7 @@ In this case, the deployment will create pods that run  `nginx-hostname` and wit
 ##### How to create a deployment in Kubernetes
 If you want create your deployment from a file, you can use `kubectl apply -f deployment.yaml` to create your deployment.
 
-If want create your deployment from the command line, you can use `kubectl apply deployment my-deployment` to create your deployment
+If you want create your deployment from the command line, you can use `kubectl apply deployment my-deployment` to create your deployment
 ##### How to delete a deployment in Kubernetes
 If you’ve created your deployment from a file, you can use `kubectl delete -f deployment.yaml` to delete your deployment.
 
