@@ -162,6 +162,15 @@ If you’ve created your deployment from a file, you can use `kubectl delete -f 
 If you’ve created your deployment from the command line, you can use `kubectl delete deployment my-deployment` to delete your deployment.
 
 
+##### Commands
+Streamlining Cluster Navigation Kubectx allows you to switch between Kubernetes clusters effortlessly. Instead of remembering and typing lengthy commands, you can use the kubectx command followed by the cluster name. For example **kubectx my-cluster**. This saves time and prevents errors caused by accidentally executing commands on the wrong cluster.
+
+```
+$ kubectx           # displays all Clusters
+my-cluster
+another-cluster
+```
+
 
 
 
