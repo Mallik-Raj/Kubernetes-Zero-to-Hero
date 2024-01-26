@@ -99,6 +99,24 @@ After a few mins, run the below command to verify the cluster installation.
 kops validate cluster demok8scluster.k8s.local
 ```
 
+
+
+## /etc/kubernetes directory  in K8s
+
+ /etc/kubernetes directory is a crucial part of any Kubernetes cluster. It stores various configuration files, certificates, and other data essential for the cluster's operation. Here's a breakdown of the key elements you'll find within:
+
+Subdirectories:
+
+**/etc/kubernetes/admin.conf :** This file holds the administrator's configuration for interacting with the API server. It includes credentials and connection details.
+**/etc/kubernetes/pki :** This directory stores all the Public Key Infrastructure (PKI) certificates used for secure communication within the cluster. It includes certificates for the API server, kubelet, etcd, and other components.
+**/etc/kubernetes/manifests :** This directory holds static Pod manifests for essential Kubernetes components like etcd, kube-apiserver, and kube-controller-manager. These Pods are automatically deployed during cluster initialization.
+Files:
+
+**ca.crt and ca.key :** These files contain the certificates and key for the Kubernetes certificate authority (CA). The CA signs all other certificates used in the cluster.
+**apiserver.crt and apiserver.key :** These files contain the certificates and key for the Kubernetes API server. The API server is the central control plane component responsible for managing the cluster.
+**kubelet.conf (or bootstrap-kubelet.conf during TLS bootstrap) :** This file contains the configuration for the kubelet agent running on each worker node. The kubelet manages Pods and containers on the node.
+**controller-manager.conf and scheduler.conf :** These files contain the configuration for the controller-manager and scheduler components, respectively. These components manage various tasks within the cluster, such as replica set deployments and workload scheduling.
+
 ## Difference between Container and POD
 
 Container is a lightweight, standalone executable package that contains everything needed to run an application, including code, libraries, and dependencies. Containers provide a consistent, isolated environment for your applications, making it easier to move them between different environments without worrying about compatibility issues.
@@ -106,6 +124,8 @@ Container is a lightweight, standalone executable package that contains everythi
 A pod is the smallest deployable unit in Kubernetes, which is a popular container orchestration platform. A pod is a logical host for one or more containers and provides a shared network namespace and storage volumes for those containers. In other words, a pod is a way to group together one or more containers that need to work together as a single unit. Each pod has a unique IP address and can communicate with other pods and services in the Kubernetes cluster.
 
 ![pod-animation-kubernetes](https://github.com/Mallik-Raj/Kubernetes-Zero-to-Hero/assets/53124649/30d4f299-69c8-4d5b-8361-0e9dd4d39624)
+
+
 
 
 
