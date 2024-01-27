@@ -108,13 +108,20 @@ kops validate cluster demok8scluster.k8s.local
 Subdirectories:
 
 **/etc/kubernetes/admin.conf :** This file holds the administrator's configuration for interacting with the API server. It includes credentials and connection details.
+
 **/etc/kubernetes/pki :** This directory stores all the Public Key Infrastructure (PKI) certificates used for secure communication within the cluster. It includes certificates for the API server, kubelet, etcd, and other components.
+
 **/etc/kubernetes/manifests :** This directory holds static Pod manifests for essential Kubernetes components like etcd, kube-apiserver, and kube-controller-manager. These Pods are automatically deployed during cluster initialization.
 Files:
 
 **ca.crt and ca.key :** These files contain the certificates and key for the Kubernetes certificate authority (CA). The CA signs all other certificates used in the cluster.
+
+
 **apiserver.crt and apiserver.key :** These files contain the certificates and key for the Kubernetes API server. The API server is the central control plane component responsible for managing the cluster.
+
+
 **kubelet.conf (or bootstrap-kubelet.conf during TLS bootstrap) :** This file contains the configuration for the kubelet agent running on each worker node. The kubelet manages Pods and containers on the node.
+
 **controller-manager.conf and scheduler.conf :** These files contain the configuration for the controller-manager and scheduler components, respectively. These components manage various tasks within the cluster, such as replica set deployments and workload scheduling.
 
 ## Difference between Container and POD
